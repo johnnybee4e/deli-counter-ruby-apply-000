@@ -12,19 +12,14 @@ def line(array)
 end
 
 def take_a_number(array, name)
-  if array.empty?
     array << name
     puts "Welcome, #{name}. You are number #{array.length} in line."
-  elsif !array.empty?
-    array << name
-    puts "Welcome, #{name}. You are number #{array.length} in line."
-  end
 end
 
 def now_serving(array)
   if array.empty?
     puts "There is nobody waiting to be served!"
-  elsif !array.empty?
+  else
     puts "Currently serving #{array[0]}."
     array.shift()
   end
