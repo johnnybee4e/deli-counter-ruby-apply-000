@@ -11,9 +11,12 @@ def line(array)
   end
 end
 
-def take_a_number(array, name)
-    array << name
-    puts "Welcome, #{name}. You are number #{array.length} in line."
+COUNTER = 0
+
+def take_a_number(array)
+    array << COUNTER + 1
+    puts "Welcome. You are number #{array.length} in line."
+    COUNTER += 1
 end
 
 def now_serving(array)
